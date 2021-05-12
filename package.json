@@ -1,0 +1,42 @@
+{
+  "name": "openapi-generator-action",
+  "description": "GitHub Action for generating an OpenAPI client using OpenAPI Generator",
+  "version": "0.1.0",
+  "main": "lib/main.js",
+  "scripts": {
+    "dev": "ts-node src/main.ts",
+    "build": "tsc && ncc build",
+    "test": "jest --coverage",
+    "format": "prettier --write **/*.ts",
+    "format-check": "prettier --check **/*.ts",
+    "pre-checkin": "yarn run format && yarn run build"
+  },
+  "keywords": [
+    "api",
+    "generator",
+    "actions",
+    "openapi-generator"
+  ],
+  "author": "Enda Phelan",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.2.7",
+    "@actions/exec": "^1.0.4",
+    "@actions/http-client": "^1.0.11",
+    "@actions/tool-cache": "^1.6.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.14",
+    "@types/node": "^14.11.2",
+    "@vercel/ncc": "^0.24.1",
+    "dotenv": "^8.2.0",
+    "jest": "^26.4.2",
+    "jest-circus": "^26.4.2",
+    "jest-runtime": "^26.4.2",
+    "prettier": "^2.1.2",
+    "tmp": "^0.2.1",
+    "ts-jest": "^26.4.1",
+    "typescript": "^4.0.3",
+    "typescript-formatter": "^7.2.2"
+  }
+}

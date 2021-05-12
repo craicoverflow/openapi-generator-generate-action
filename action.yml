@@ -1,0 +1,44 @@
+name: 'openapi-generator-action'
+description: 'GitHub Action for OpenAPITools/openapi-generator'
+author: 'craicoverflow'
+branding:
+  color: 'green'
+  icon: 'package'
+
+inputs:
+  generator:
+    description: 'The name of the generator to use'
+    required: true
+  version:
+    description: 'Specify which version of openapi-generator to use'
+    default: 'latest'
+    required: false
+  input:
+    description: 'OpenAPI specification file to use as the source for generation'
+    required: true
+  output: 
+    description: 'The output directory of the generated code'
+    required: false
+    default: '.'
+  package-name: 
+    description: 'Package name'
+    required: false
+  git-repo-id:
+    description: 'Git repository name'
+    required: false
+  git-user-id:
+    description: 'The owner of the Git repo'
+    required: false
+  additional-properties:
+    description: 'Provide a config object of additional properties'
+    required: false
+  ignore-file-override:
+    description: 'Pass a custom OpenAPI Generator ignore file'
+    required: false
+  config:
+    description: 'Config file used to define additional configuration parameters'
+    required: false
+
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
