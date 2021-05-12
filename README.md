@@ -4,7 +4,7 @@ This action installs and runs [OpenAPI Generator](https://openapi-generator.tech
 
 ## Usage
 
-See [action.yaml](https://craicoverflow/openapi-generator-action/blob/main/action.yml)
+See [action.yaml](https://github.com/craicoverflow/openapi-generator-generate-action/blob/main/action.yml)
 
 Basic:
 
