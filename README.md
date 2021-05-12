@@ -10,7 +10,7 @@ Basic:
 
 ```yaml
 steps:
-- uses: actions/openapi-generator-action@v0
+- uses: actions/openapi-generator-action@v0.1
   with:
     generator: 'go'
     input: petstore.yaml
