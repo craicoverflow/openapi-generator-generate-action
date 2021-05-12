@@ -1,11 +1,8 @@
 
-<a name="v1.0.0"></a>
-## v1.0.0 (2021-05-07)
+<a name="v0.1"></a>
+## v0.1 (2021-05-12)
 
-### Bug Fixes
+### Features
 
-* get full path to binary
-* get full path to binary
-* do not execute git-chglog
-* do not execute git-chglog
+* add OpenAPI Generator
 
