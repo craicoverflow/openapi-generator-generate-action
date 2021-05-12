@@ -1,5 +1,5 @@
 {
-  "name": "openapi-generator-action",
+  "name": "openapi-generator-generate-action",
   "description": "GitHub Action for generating an OpenAPI client using OpenAPI Generator",
   "version": "0.1.0",
   "main": "lib/main.js",

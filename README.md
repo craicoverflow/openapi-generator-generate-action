@@ -1,4 +1,4 @@
-# install-git-chglog
+# openapi-generator-generate-action
 
 This action installs and runs [OpenAPI Generator](https://openapi-generator.tech/).
 
@@ -10,7 +10,7 @@ Basic:
 
 ```yaml
 steps:
-- uses: actions/openapi-generator-action@v1
+- uses: actions/openapi-generator-action@v0
   with:
     generator: 'go'
     input: petstore.yaml

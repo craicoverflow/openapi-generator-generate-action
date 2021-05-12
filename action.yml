@@ -1,4 +1,4 @@
-name: 'openapi-generator-action'
+name: 'openapi-generator-generate-action'
 description: 'GitHub Action for OpenAPITools/openapi-generator'
 author: 'craicoverflow'
 branding:
