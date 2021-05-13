@@ -1,0 +1,11 @@
+name: Pull Request
+on: 
+  push:
+    branches: ['*']
+  
+jobs:
+  generate:
+    - uses: craicoverflow/openapi-generator-action@${GITHUB_REF##*/}
+      with:
+        generator: go
+        input: ./examples/petstore-expanded.yaml
