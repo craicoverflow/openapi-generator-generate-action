@@ -2,11 +2,9 @@ name: Pull Request
 
 on:
   push:
-    branches: [main]
-    paths:
-      - '**.go'
+    branches: [main, fix]
   pull_request:
-    branches: [main]
+    branches: [main, fix]
 
 jobs:
   generate:
