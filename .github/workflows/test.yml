@@ -4,11 +4,13 @@ on:
   push:
     branches: [main, fix]
   pull_request:
-    branches: [main, fix]
+    branches: [main]
 
 jobs:
   generate:
-    - uses: craicoverflow/openapi-generator-action@${GITHUB_REF##*/}
-      with:
-        generator: go
-        input: ./examples/petstore-expanded.yaml
+    runs-on: ubuntu-latest
+    steps:
+      - uses: craicoverflow/openapi-generator-action@fix
+        with:
+          generator: go
+          input: ./examples/petstore-expanded.yaml
