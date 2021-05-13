@@ -1,8 +1,13 @@
 name: Pull Request
-on: 
+
+on:
   push:
-    branches: ['*']
-  
+    branches: [main]
+    paths:
+      - '**.go'
+  pull_request:
+    branches: [main]
+
 jobs:
   generate:
     - uses: craicoverflow/openapi-generator-action@${GITHUB_REF##*/}
