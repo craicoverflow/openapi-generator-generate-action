@@ -1,13 +1,12 @@
 import * as core from '@actions/core';
 import * as exec from '@actions/exec';
-import { cwd } from 'process';
 
 async function run(): Promise<void> {
   try {
     const version = core.getInput('version');
 
     // install OpenAPI Generator
-    const openApiGenerator = 'npx openapi-generator-cli';
+    const openApiGenerator = 'npx openapi-generator-clisdf';
     await exec.exec(openApiGenerator, ['version-manager', 'set', version]);
 
     // required args
