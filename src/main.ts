@@ -6,7 +6,7 @@ async function run(): Promise<void> {
     const version = core.getInput('version');
 
     // install OpenAPI Generator
-    const openApiGenerator = 'npx openapi-generator-clisdf';
+    const openApiGenerator = 'npx @openapitools/openapi-generator-cli';
     await exec.exec(openApiGenerator, ['version-manager', 'set', version]);
 
     // required args

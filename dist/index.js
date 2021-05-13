@@ -43,13 +43,12 @@ function run() {
         try {
             const version = core.getInput('version');
             // install OpenAPI Generator
-            yield exec.exec('npm install -g @openapitools/openapi-generator-cli');
-            const openApiGenerator = 'openapi-generator-cli';
+            const openApiGenerator = 'npx @openapitools/openapi-generator-cli';
             yield exec.exec(openApiGenerator, ['version-manager', 'set', version]);
             // required args
-            const generator = core.getInput('generator') || 'go';
-            const input = core.getInput('input') || './examples/petstore/petstore-expanded.yaml';
-            const output = core.getInput('output') || './examples/petstore/api';
+            const generator = core.getInput('generator');
+            const input = core.getInput('input');
+            const output = core.getInput('output');
             const generateArgs = ['generate', '-g', generator, '-i', input, '-o', output];
             // optional properties
             const packageName = core.getInput('package-name');
@@ -68,7 +67,7 @@ function run() {
             if (ignoreFileOverride) {
                 generateArgs.push('--ignore-file-override', ignoreFileOverride);
             }
-            const config = core.getInput('config') || './examples/petstore/config.yaml';
+            const config = core.getInput('config');
             if (config) {
                 generateArgs.push('--config', config);
             }

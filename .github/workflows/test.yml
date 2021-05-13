@@ -2,15 +2,14 @@ name: Pull Request
 
 on:
   push:
-    branches: [main]
-  pull_request:
-    branches: [main]
+    branches: [fix]
 
 jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
+      -  uses: actions/checkout@v2
       - uses: craicoverflow/openapi-generator-action@fix
         with:
           generator: go
-          input: ./examples/petstore-expanded.yaml
+          input: ./examples/petstore/petstore-expanded.yaml
