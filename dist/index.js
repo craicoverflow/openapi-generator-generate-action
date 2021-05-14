@@ -73,7 +73,7 @@ function run() {
             }
             const additionalProperties = core.getInput('additional-properties');
             if (additionalProperties) {
-                generateArgs.push('-p', config);
+                generateArgs.push('-p', additionalProperties);
             }
             yield exec.exec(openApiGenerator, generateArgs);
         }

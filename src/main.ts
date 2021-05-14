@@ -40,7 +40,7 @@ async function run(): Promise<void> {
     }
     const additionalProperties = core.getInput('additional-properties');
     if (additionalProperties) {
-      generateArgs.push('-p', config);
+      generateArgs.push('-p', additionalProperties);
     }
 
     await exec.exec(openApiGenerator, generateArgs);
