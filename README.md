@@ -10,7 +10,7 @@ Basic:
 
 ```yaml
 steps:
-- uses: actions/openapi-generator-action@v1
+- uses: craicoverflow/openapi-generator-action@v1
   with:
     generator: 'go'
     input: petstore.yaml
