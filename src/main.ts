@@ -34,6 +34,10 @@ async function run(): Promise<void> {
     if (ignoreFileOverride) {
       generateArgs.push('--ignore-file-override', ignoreFileOverride);
     }
+    const templatesDir = core.getInput('template');
+    if (templatesDir) {
+      generateArgs.push('--template');
+    }
     const config = core.getInput('config');
     if (config) {
       generateArgs.push('--config', config);

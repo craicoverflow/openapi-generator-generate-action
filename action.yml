@@ -32,6 +32,9 @@ inputs:
   additional-properties:
     description: 'Provide a config object of additional properties'
     required: false
+  template:
+    description: Directory of the templates used to generate code
+    required: false
   ignore-file-override:
     description: 'Pass a custom OpenAPI Generator ignore file'
     required: false
