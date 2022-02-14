@@ -67,6 +67,10 @@ function run() {
             if (ignoreFileOverride) {
                 generateArgs.push('--ignore-file-override', ignoreFileOverride);
             }
+            const templatesDir = core.getInput('template');
+            if (templatesDir) {
+                generateArgs.push('--template', templatesDir);
+            }
             const config = core.getInput('config');
             if (config) {
                 generateArgs.push('--config', config);

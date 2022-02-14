@@ -36,7 +36,7 @@ async function run(): Promise<void> {
     }
     const templatesDir = core.getInput('template');
     if (templatesDir) {
-      generateArgs.push('--template');
+      generateArgs.push('--template', templatesDir);
     }
     const config = core.getInput('config');
     if (config) {
@@ -49,7 +49,7 @@ async function run(): Promise<void> {
 
     await exec.exec(openApiGenerator, generateArgs);
 
-  } catch (error) {
+  } catch (error: any) {
     core.setFailed(error.message);
   }
 }
