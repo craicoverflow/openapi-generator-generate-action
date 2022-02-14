@@ -36,7 +36,7 @@ async function run(): Promise<void> {
     }
     const templatesDir = core.getInput('template');
     if (templatesDir) {
-      generateArgs.push('--template', templatesDir);
+      generateArgs.push('-t', templatesDir);
     }
     const config = core.getInput('config');
     if (config) {
