@@ -1,10 +1,14 @@
 
-<a name="v1.1.0"></a>
-## [v1.1.0](https://github.com/craicoverflow/install-git-chglog/compare/v1...v1.1.0) (2022-02-08)
+<a name="v1.2.0"></a>
+## [v1.2.0](https://github.com/craicoverflow/install-git-chglog/compare/v1...v1.2.0) (2022-02-14)
 
 
 <a name="v1"></a>
-## [v1](https://github.com/craicoverflow/install-git-chglog/compare/v1.0.0...v1) (2022-02-08)
+## [v1](https://github.com/craicoverflow/install-git-chglog/compare/v1.1.0...v1) (2022-02-14)
+
+
+<a name="v1.1.0"></a>
+## [v1.1.0](https://github.com/craicoverflow/install-git-chglog/compare/v1.0.0...v1.1.0) (2022-02-08)
 
 ### Features
 
