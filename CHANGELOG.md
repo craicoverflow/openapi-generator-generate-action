@@ -1,10 +1,18 @@
 
-<a name="v1.2.0"></a>
-## [v1.2.0](https://github.com/craicoverflow/install-git-chglog/compare/v1...v1.2.0) (2022-02-14)
+<a name="v1.2.1"></a>
+## [v1.2.1](https://github.com/craicoverflow/install-git-chglog/compare/v1...v1.2.1) (2022-02-14)
 
 
 <a name="v1"></a>
-## [v1](https://github.com/craicoverflow/install-git-chglog/compare/v1.1.0...v1) (2022-02-14)
+## [v1](https://github.com/craicoverflow/install-git-chglog/compare/v1.2.0...v1) (2022-02-14)
+
+### Bug Fixes
+
+* use 't' option instead of 'template' ([#5](https://github.com/craicoverflow/install-git-chglog/issues/5))
+
+
+<a name="v1.2.0"></a>
+## [v1.2.0](https://github.com/craicoverflow/install-git-chglog/compare/v1.1.0...v1.2.0) (2022-02-14)
 
 
 <a name="v1.1.0"></a>
